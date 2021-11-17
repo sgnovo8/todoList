@@ -15,7 +15,7 @@ contract ToDoList {
         createTask("wash car");
     }
     
-    function createTask(string memory content) public {
+    function createTask(string memory content) public view {
         taskCount ++;
         tasks[taskCount] = Task(taskCount, content, false);
         
