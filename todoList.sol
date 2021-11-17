@@ -15,6 +15,8 @@ contract ToDoList {
         createTask("wash car");
     }
     
+    // is "view" necessary here?
+    
     function createTask(string memory content) public view {
         taskCount ++;
         tasks[taskCount] = Task(taskCount, content, false);
