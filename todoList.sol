@@ -16,6 +16,7 @@ contract ToDoList {
     }
     
     // is "view" necessary here?
+    // also, see "++" (from what library?)
     
     function createTask(string memory content) public view {
         taskCount ++;
